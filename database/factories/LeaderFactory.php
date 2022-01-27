@@ -8,7 +8,7 @@ use Faker\Generator as Faker;
 $factory->define(Leader::class, function (Faker $faker) {
     return [
         'descript' => $faker -> text(),
-        'bonus' => $faker -> randomNumber(),
-        'salary' => $faker -> randomNumber(2000, 5000),
+        'bonus' => $faker -> randomNumber(4, false),
+        'salary' => $faker -> randomNumber(4, true),
     ];
 });
