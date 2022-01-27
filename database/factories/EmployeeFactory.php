@@ -10,7 +10,7 @@ $factory->define(Employee::class, function (Faker $faker) {
         'firstname' => $faker -> firstName(),
         'lastname' => $faker -> lastName(),
         'role' => $faker -> word(),
-        'salary' => $faker -> randomNumber(2000, 5000),
+        'salary' => $faker -> randomNumber(4, true),
         'date_of_employment' => $faker -> date(),
     ];
 });

@@ -19,7 +19,7 @@ class CreateEmployeesTable extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('role');
-            $table->integer('salary');
+            $table->bigInteger('salary');
             $table->date('date_of_employment');
 
             $table->timestamps();
